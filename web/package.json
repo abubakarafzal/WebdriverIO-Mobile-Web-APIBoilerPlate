@@ -1,0 +1,53 @@
+{
+  "name": "webdriverio_typescript_e2e",
+  "version": "1.0.0",
+  "description": "Boilerplate project using webdriverio with mocha and BDD framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "wdio run ./config/wdio.conf.ts",
+    "smoke": "wdio run ./config/wdio.conf.ts --suite smoke",
+    "pretest:docker": "docker-compose up -d",
+    "test:docker": "wdio run ./config/wdio.conf.docker.ts",
+    "posttest:docker": "docker-compose down",
+    "report:mocha": "marge ./reports/mocha/wdio-ma-merged.json --reportTitle 'WebAppMochaReport' && move mochawesome-report.html ./mochawesome-report",
+    "mailMochaResult": "ts-node ./generator/mochaEmail.ts",
+    "report:mocha:ci": "marge ./reports/mocha/wdio-ma-merged.json",
+    "test:e2e": "wdio run ./config/wdio.conf.e2e.ts",
+    "pretest:e2e:docker": "docker-compose up -d",
+    "test:e2e:docker": "wdio run ./config/wdio.conf.e2e.docker.ts",
+    "posttest:e2e:docker": "docker-compose down",
+    "report:cucumber": "ts-node ./generator/index.ts",
+    "mailCucumberReport": "npm run report:cucumber && ts-node ./generator/bddEmail.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sadabnepal/WebdriverIOTypeScriptE2E.git"
+  },
+  "author": "MD SADAB SAQIB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E/issues"
+  },
+  "homepage": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.4.1",
+    "@types/nodemailer": "^6.4.14",
+    "@wdio/cli": "^8.35.1",
+    "@wdio/cucumber-framework": "^8.35.0",
+    "@wdio/json-reporter": "^8.36.0",
+    "@wdio/junit-reporter": "^8.32.4",
+    "@wdio/local-runner": "^8.35.1",
+    "@wdio/mocha-framework": "^8.35.0",
+    "@wdio/spec-reporter": "^8.32.4",
+    "cucumber-html-reporter": "^7.1.1",
+    "dotenv": "^16.4.5",
+    "nodemailer": "^6.9.13",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.4",
+    "wdio-cucumberjs-json-reporter": "^5.2.1",
+    "wdio-docker-service": "^3.2.1"
+  },
+  "dependencies": {
+    "zip-local": "^0.3.5"
+  }
+}
