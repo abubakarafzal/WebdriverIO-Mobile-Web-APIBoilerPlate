@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sadabnepal/WebdriverIOTypeScriptE2E.git"
+    "url": "git+https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate.git"
   },
   "keywords": [
     "webdriverio",
@@ -16,12 +16,12 @@
     "supertest",
     "appium"
   ],
-  "author": "MD SADAB SAQIB",
+  "author": "Abu bakar Afzal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E/issues"
+    "url": "https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate/issues"
   },
-  "homepage": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E#readme",
+  "homepage": "https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate#readme",
   "dependencies": {
     "enquirer": "^2.3.6"
   },

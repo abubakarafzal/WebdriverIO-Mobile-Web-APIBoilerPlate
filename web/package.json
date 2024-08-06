@@ -21,14 +21,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sadabnepal/WebdriverIOTypeScriptE2E.git"
+    "url": "git+https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate.git"
   },
-  "author": "MD SADAB SAQIB",
+  "author": "Abu bakar Afzal",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E/issues"
+    "url": "https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate/issues"
   },
-  "homepage": "https://github.com/sadabnepal/WebdriverIOTypeScriptE2E#readme",
+  "homepage": "https://github.com/abubakarafzal/WebdriverIO-Mobile-Web-APIBoilerPlate#readme",
   "devDependencies": {
     "@faker-js/faker": "^8.4.1",
     "@types/nodemailer": "^6.4.14",
